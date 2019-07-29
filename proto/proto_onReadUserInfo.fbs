@@ -1,0 +1,12 @@
+include "proto_header.fbs";
+include "proto_common.fbs";
+
+namespace WebApplication.Document.Protocol.Definition;
+
+table proto_onReadUserInfo {
+	username:string;
+	name:string;
+	regist_date:string;
+}
+
+root_type proto_onReadUserInfo;

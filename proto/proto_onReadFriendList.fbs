@@ -1,0 +1,8 @@
+include "proto_common.fbs";
+
+namespace WebApplication.Document.Protocol.Definition;
+
+table proto_onReadFriendList{
+	friendList:[proto_userInfo];
+}
+root_type proto_onReadFriendList;

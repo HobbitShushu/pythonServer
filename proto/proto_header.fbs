@@ -1,0 +1,7 @@
+namespace WebApplication.Document.Protocol.Definition;
+
+table proto_header{
+	useridx:uint;
+}
+
+root_type proto_header;

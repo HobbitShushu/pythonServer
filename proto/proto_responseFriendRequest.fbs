@@ -1,0 +1,12 @@
+include "proto_header.fbs";
+include "proto_common.fbs";
+
+namespace WebApplication.Document.Protocol.Definition;
+
+table proto_responseFriendRequest{
+	header:proto_header;
+	targetidx:uint;
+	state:E_Friend_Request_State;
+}
+
+root_type proto_responseFriendRequest;

@@ -1,0 +1,22 @@
+{
+    "Setting":{
+        "user":"root",
+        "password":"dlsfhr0309!",
+        "host":"localhost",
+        "database":"data",
+        "charset": "utf8",
+        "connection_timeout" : 60
+    },
+    "Redis_DB": {
+        "masterHost" : "127.0.0.1",
+        "slaveHosts" : [
+            "127.0.0.1",
+            "127.0.0.1"
+        ],
+        "slavePorts" : [
+            7001,
+            7002
+        ],
+        "password" : "redispassword"
+      }
+}

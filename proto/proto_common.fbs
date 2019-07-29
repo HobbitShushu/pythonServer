@@ -1,0 +1,60 @@
+namespace WebApplication.Document.Protocol.Definition;
+
+enum responseResultType : ubyte {
+	unknown = 0,
+	pool_gold = 1,
+	pool_ruby = 2,
+	pool_ticket = 4,
+	pool_piece = 5,
+	pool_item = 6,
+	pool_bag = 7,
+	pool_condition = 8,
+	pool_count = 10,
+	pool_level = 11,
+	pool_time = 13,
+
+	over_time = 30,
+	over_quest = 31,
+	
+	success = 127
+}
+
+enum E_Friend_Request_State : ubyte {
+	pending = 0,
+	accepted = 1,
+	denied = 2,
+	block = 3
+}
+
+struct proto_userint {
+	useridx:uint;
+	loginCount:uint;
+}
+
+struct proto_characterInfo {
+	chracteridx:uint;
+	grade:uint;
+	level:uint;
+	exp:uint;
+	awaken:uint;
+	
+	soulWeapon:uint;
+	soulArmor:uint;
+	soulTreasure:uint;
+}
+
+table proto_userInterest{
+	useridx:uint;
+	username:string;
+	interest:[proto_interest];
+}
+
+table proto_userInfo{
+	name:string;
+	regist_date:string;
+}
+
+table proto_interest{
+	title:string;
+	value:[string];
+}

@@ -1,0 +1,11 @@
+include "proto_common.fbs";
+
+namespace WebApplication.Document.Protocol.Definition;
+
+table proto_registAccount{
+	username:string;
+	name:string;
+	password:string;	
+}
+
+root_type proto_registAccount;
