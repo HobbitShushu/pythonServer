@@ -1,7 +1,7 @@
 {
     "Setting":{
         "user":"root",
-        "password":"dlsfhr0309!",
+        "password":"DB_PASSWORD",
         "host":"localhost",
         "database":"data",
         "charset": "utf8",
