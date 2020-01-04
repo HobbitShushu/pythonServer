@@ -2,8 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 application = Flask(__name__)
-#application.config['SECRET_KEY'] = 'dlsfhr0309!'
-#application.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:dlsfhr0309!@localhost/data'
+#application.config['SECRET_KEY'] = 'DB_PASSWORD'
+#application.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:DB_PASSWORD@localhost/data'
 #application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #db = SQLAlchemy(application)
 
